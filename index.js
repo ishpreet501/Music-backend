@@ -10,7 +10,7 @@ const port = 5000;
 const server = express()
 
 server.use(cors({
-    origin:["https://rad-douhua-2ff8b3.netlify.app/","http://localhost:5173"],
+    origin:["https://rad-douhua-2ff8b3.netlify.app","http://localhost:5173"],
   
 }
 ))
