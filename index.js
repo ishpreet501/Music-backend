@@ -9,7 +9,11 @@ const discographyRouter = require("./Routes/discography");
 const port = 5000;
 const server = express()
 
-server.use(cors())
+server.use(cors({
+    origin:["https://rad-douhua-2ff8b3.netlify.app/","http://localhost:5173"],
+    credentials:true
+}
+))
 server.use(express.json());
 dbconnection()
 server.use('/api', adminrouter);
